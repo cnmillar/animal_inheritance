@@ -1,6 +1,8 @@
 require './bat.rb'
+require './fly_module.rb'
 
 class Bat < Mammal
+		include Flight
 		def initialize(num_legs, bat_type, common_name, scientific_name, weight, avg_length, color)
 			super(num_legs, common_name, scientific_name, weight, avg_length, color)
 			@bat_type = bat_type
